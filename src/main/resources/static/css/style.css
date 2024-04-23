@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white linear-gradient(to right bottom, rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0.5));
+    color: black;
+    font-size: 32px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.person-info, .address {
+    padding: calc(100px + 1em) 1em 1em 1em;
+    background-color: #EEEEEE;
+    border: 2px solid silver;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 100px;
+}
+
+.person-info {
+    position: relative;
+}
+
+.address {
+    width: 25ex;
+}
+
+.address-line {
+    background-color: #DDDDDD;
+    padding: 10px;
+}
+
+.photo {
+    position: absolute;
+    left: -100px;
+    top: -100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.photo-border {
+    position: absolute;
+    left: -102px;
+    top: -102px;
+    width: 204px;
+    height: 204px;
+    z-index: -1;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    border: 2px solid silver;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.row {
+    display: flex;
+    margin-bottom: 0.5em;
+    background-color: #DDDDDD;
+}
+
+.label {
+    width: 15ex;
+}
+
+.value {
+    width: 20ex;
+    font-weight: bold;
+}
